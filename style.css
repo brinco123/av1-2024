@@ -1,12 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap');
 :root{
-    --cor-de-fundo:#FA0303;
-    --cor-texto:#FFFFFF;
-    --botao-inativo:rgba(250, 3, 3, 0.9761);
-    --cor-de-fundo-linear:rgba(255, 143, 0, 1);
-    --verde-claro:#6FFF57;
+    --cor-de-fundo:#57FFE1;
+    --cor-texto:#000000;
+    --cor-ativa:#57C3FF;
+    --botao-inativo:rgba(3, 250, 176, 0.976);
+    --cor-aba:rgba(0, 255, 148, 1);
 
 }
 body{
     background-color: var(--cor-de-fundo);
+    color:var(--branco);
+    font-family: 'Chaka Petch', sans-serif;
+}
+.conteudo-principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+.titulo-principal{
+    text-align: left;
+    width: 100%;
+    font-size: 32px;
+
 }
