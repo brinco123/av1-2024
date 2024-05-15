@@ -1,16 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap');
-:root{
-    --cor-de-fundo:#57FFE1;
-    --cor-texto:#000000;
-    --cor-ativa:#57C3FF;
-    --botao-inativo:rgba(3, 250, 176, 0.976);
-    --cor-aba:rgba(0, 255, 148, 1);
 
+:root{
+    --branco:#FFFFFF;
+    --cor-de-fundo:#6FC9C0;
+    --cor-rosa:#C568CC;
+    --verde:#084A56;
+    --verde-claro:#6FC9C0;
+    --verde-limao:#6FFF56;
+    --botao-inativo:rgba(58, 55, 94, 0.5);
+    --botao-inativo:rgba(8, 74, 86, 0.5);
+    --botao-ativo:rgba(17, 209, 243, 0.795);
 }
 body{
     background-color: var(--cor-de-fundo);
     color:var(--branco);
-    font-family: 'Chaka Petch', sans-serif;
+    font-family: 'Chaka Petch', 'Sans-Serif';
 }
 .conteudo-principal{
     display: flex;
@@ -25,5 +29,68 @@ body{
     text-align: left;
     width: 100%;
     font-size: 32px;
+}
+.titulo-principal span{
+    color:var(--verde-limao);
+}
 
+.botao{
+    font-family: 'Chaka Petch', 'Sans-Serif';
+    background-color: var(--botao-inativo);
+    color: var(--branco);
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    font-size: 18px;
+    align-items: center;
+    width: 100%;
+    border-bottom: 4px solid var(--botao-ativo);
+    border-left: 2px solid var(--botao-ativo);
+    border-right: 2px solid var(--botao-ativo);
+    border-top: none;
+}
+.botao:first-child{
+    border-radius: 40px 40px 0 0;
+}
+.botoes{
+    display: block;
+}
+.ativo{
+    background-color: var(--botao-ativo);
+    border-bottom: 4px solid var(--verde);
+}
+.abas-textos{
+    background-color: var(--cor-de-fundo);
+    padding: 40px;
+    border-radius: 0 0 40px 40px;
+}
+.aba-conteudo.ativo{
+    display: block;
+}
+aba-conteudo{
+    display: none;
+}
+.aba-conteudo-titulo-principal{
+    font-size: 28px;
+    text-align: center;
+}
+.aba-conteudo-titulo-secundario{
+    text-align: center;
+    color: var(--rosa);
+    text-transform: uppercase;
+}
+.contador{
+    text-align: center;
+    font-size: 20px;
+}
+@media screen and (min-width:768px){
+    .botoes{
+        display: flex;
+    }
+    .botao:first-child{
+        border-radius: 40px 0 0 0;
+    }
+    .botao:last-child{
+        border-radius: 0 40px 0 0;
+    }
 }
